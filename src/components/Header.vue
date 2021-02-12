@@ -15,9 +15,6 @@
           ><i class="fas fa-trash-alt"></i> Delete all notes</b-nav-item
         >
       </b-navbar-nav>
-      <b-navbar-nav>
-        <b-nav-item><i class="fas fa-paint-brush"></i> Color</b-nav-item>
-      </b-navbar-nav>
     </b-collapse>
   </b-navbar>
 </template>

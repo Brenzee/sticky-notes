@@ -1,24 +1,16 @@
-# stickies
+# Stickies app with Vue.js
 
-## Project setup
-```
-npm install
-```
+## About the app
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+The project is made with Vue.js (version 2). This is my absoulte first time touching and working with Vue and the environment is very new to me.
+I did not use 3 Vue.js, because I had problems using npm package bootstrap-vue. (But it is possible to use the regular bootstrap and its classes)
+For the styling I used SCSS.
+For saving data and their position of sticky notes I used localstorage, which is updated each time any value of note changes.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## How it works
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- You can add a new note with "Add note" button. It will create a note with default text.
+- You can delete all notes with "Delete all notes".
+- Sticky notes icon with number on the right shows, how many notes currently have been made.
+- To change the note title and note body text, click either on the title or the note body to change the corresponding text.
+- To change the color of the note, click the paint brush icon, which will cycle through the colors!

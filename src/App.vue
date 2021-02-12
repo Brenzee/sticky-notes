@@ -9,12 +9,14 @@
         :index="index"
         :title="note.title"
         :text="note.text"
+        :color="note.color"
         :left="note.left"
         :top="note.top"
         :rows="note.rows"
         :updateTitle="updateTitle"
         :updateText="updateText"
         :deleteNote="deleteOneNote"
+        :changeColor="changeColor"
         :mo="mo"
         :captureOff="captureOff"
         :captureOn="captureOn"
@@ -52,6 +54,7 @@ export default {
           title: "New note",
           text: "Text",
           captureDrag: false,
+          color: "yellow",
           top: 100,
           left: 100,
           offset: [0, 0],
@@ -71,10 +74,10 @@ export default {
       this.notes[objectIndex] = noteObject
       localStorage.notes = JSON.stringify(this.notes)
     },
-    updateText(id, text, textHeight) {
+    updateText(id, text) {
       const objectIndex = this.notes.findIndex((note) => note.id === id)
       var noteObject = this.notes[objectIndex]
-      console.log(textHeight)
+      console.log(text)
       noteObject.text = text
       this.notes[objectIndex] = noteObject
       localStorage.notes = JSON.stringify(this.notes)
@@ -107,7 +110,26 @@ export default {
       noteObject.captureDrag = false
       this.notes[objectIndex] = noteObject
     },
-
+    changeColor(id) {
+      const objectIndex = this.notes.findIndex((note) => note.id === id)
+      var noteObject = this.notes[objectIndex]
+      switch (noteObject.color) {
+        case "yellow":
+          noteObject.color = "red"
+          break
+        case "red":
+          noteObject.color = "green"
+          break
+        case "green":
+          noteObject.color = "blue"
+          break
+        case "blue":
+          noteObject.color = "yellow"
+          break
+      }
+      this.notes[objectIndex] = noteObject
+      localStorage.notes = JSON.stringify(this.notes)
+    },
     deleteOneNote(id) {
       this.notes = this.notes.filter((note) => note.id !== id)
     },
