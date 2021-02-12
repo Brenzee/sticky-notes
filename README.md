@@ -2,10 +2,10 @@
 
 ## About the app
 
-The project is made with Vue.js (version 2). This is my absoulte first time touching and working with Vue and the environment is very new to me.
-I did not use 3 Vue.js, because I had problems using npm package bootstrap-vue. (But it is possible to use the regular bootstrap and its classes)
-For the styling I used SCSS.
-For saving data and their position of sticky notes I used localstorage, which is updated each time any value of note changes.
+- The project is made with Vue.js (version 2). This is my absoulte first time touching and working with Vue and the environment is very new to me.
+- I did not use 3 Vue.js, because I had problems using npm package bootstrap-vue. (But it is possible to use the regular bootstrap and its classes)
+- For the styling I used SCSS.
+- For saving data and their position of sticky notes I used localstorage, which is updated each time any value of note changes.
 
 ## How it works
 
