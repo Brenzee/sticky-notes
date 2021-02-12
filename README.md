@@ -14,3 +14,11 @@
 - Sticky notes icon with number on the right shows, how many notes currently have been made.
 - To change the note title and note body text, click either on the title or the note body to change the corresponding text.
 - To change the color of the note, click the paint brush icon, which will cycle through the colors!
+
+## How to run the app
+
+### npm i 
+Installs all the dependencies for the project
+
+### npm run serve
+Runs local server for the webiste
